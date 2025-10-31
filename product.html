@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="CSS/product.css">
+</head>
+<body>
+  <header>
+    <a href="models.html" class="back-btn">← Back</a>
+    <h1 id="product-title"></h1>
+  </header>
+
+  <main class="product-detail">
+    <img id="product-image" alt="Car Image">
+    <p id="product-desc"></p>
+    <p class="price" id="product-price"></p>
+  </main>
+
+  <script src="Scripts/products.js"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = parseInt(urlParams.get("id"));
+    const product = products.find(p => p.id === productId);
+
+    if(product){
+      document.getElementById("product-title").textContent = product.title;
+      document.getElementById("product-image").src = product.image;
+      document.getElementById("product-desc").textContent = product.desc;
+      document.getElementById("product-price").textContent = product.price;
+    } else {
+      document.body.innerHTML = "<h2>Product not found!</h2>";
+    }
+  </script>
+</body>
+</html>

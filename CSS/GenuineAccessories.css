@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.genuine-accessories-body{
+    font-family: 'Poppins', sans-serif;
+    background: #f6f4f4;
+}
+
+.gen-img-fluid{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.gen-container{
+    width: 100%;
+    margin: auto;
+    /* display: inline; */
+  
+}
+.img-text h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 730;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 50px;
+  text-align: left;
+  color: rgb(245, 245, 247);
+  z-index: 2;
+  bottom: 160px;
+  padding-left: 1100px;
+}
+
+.img-text h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 50px;
+  text-align: left;
+  color: rgb(241, 234, 234);
+  z-index: 2;
+  bottom: 130px;
+  padding-left: 1100px;
+
+}
+.image-container .overlay {
+  position: absolute;
+  inset: 0; /* covers the whole image */
+  background: rgba(6, 19, 200, 0.5); /* 50% black */
+}
+
+.navbar2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #faf8f8;
+    box-shadow: 30px 20px 40px rgba(4, 4, 4, 0.1);
+    border: 1px solid #eae8e8;
+}
+
+.navbar2 ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* a bit below the text */
+  width: 0;
+  height: 2px;
+  background-color: red; /* line color */
+  transition: width 0.3s ease;
+}
+
+.navbar2 li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar2 li a{
+    text-decoration: none;
+    color: #111;
+    padding: 6px 15px;
+    /* border-radius: 20px; */
+}
+
+
+.navbar2 li a:hover{
+    background-color: #f0e3e3;
+    color: #0f0d0d;
+    padding: 15px;
+}
+
+.description-heading{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    padding-top: 60px;
+}
+
+.description{
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 60px;
+}
+
+#product-highlights{
+ background-color: #0f0d0d;
+ color: white;
+}
+
+.campaign-text{
+    text-align: center;
+    align-items: center;
+    padding: auto;
+}
+
+.campaign-heading{
+    padding-top: 70px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.campaign-para{
+    font-size: 1.2rem;
+    padding-left: 350px;
+    padding-right: 350px;
+    letter-spacing: 1px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.all-logs-container {
+  display: flex;         
+  gap: 20px;            
+  transition: transform 0.5s ease; 
+  will-change: transform;
+  margin-left: 190px;
+  margin-bottom: 90px;
+}
+
+.logs-container {
+  flex: 0 0 auto; 
+         
+}
+
+.img-container {
+  background: #0f0d0d;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.arrow-btn{
+    background-color: #0f0d0d;
+   margin-left: 1200px;
+   padding: 30px;
+}
+
+.arrow1 {
+  color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+  background: transparent;  
+  border: 2px solid #0f0d0d;  
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+.arrow1:hover {
+  background-color: rgb(96, 66, 66); 
+  color: white;            
+           
+}
+
+.arrow2{
+ color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+  background: transparent;  
+  border: 2px solid #0f0d0d;  
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+.arrow2:hover {
+  background-color: rgb(96, 66, 66);  
+  color: white;   
+         
+}
+
+.img-container img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.img-container:hover {
+  background-color: #433636;
+}
+
+.img-container:hover img {
+  transform: scale(1.1);
+}
+
+.img-para {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding: 12px 16px;
+  color: #d3d3d3;
+  background: transparent;
+  padding-top: 30px;
+}
+
+#campaign&specials{
+    background-color: white;
+}
+
+.special-heading{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+}
+
+.special-images{
+
+  display: flex;         
+  gap: 20px;            
+  transition: transform 0.5s ease; 
+  will-change: transform;
+  margin-left: 190px;
+  margin-bottom: 90px;
+}
+
+.img-special-1{
+  margin-left: 250px;
+  margin-top: 110px;
+  border-radius: 18px; 
+  width: 540px;
+  height: 750px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #0f0d0d;
+  margin: 50px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.img-special-2{
+   overflow: hidden;
+    height: 700px;
+    width: 550px;
+    background-color: #0f0d0d;
+    margin-right: 180px;
+    border-radius: 18px;
+}
+
+.img-special-2 img{
+     width: 100%;
+  height: 700px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+   border-radius: 18px;
+}
+
+
+.img-special-1 img{
+     width: 100%;
+  height: 700px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+   border-radius: 18px;
+}
+
+.spec-img-heading{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.texts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 80px;
+  padding-left: 70px;
+  /* background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0)); */
+  width: 100%;
+  color: white;
+}
+
+
+.texts2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* padding: 30px; */
+  padding-left: 650px;
+  padding-bottom: 170px;
+  width: 100%;
+  color: white;
+  /* background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0)); */
+}
+
+
+.spec-img-heading2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+.spec-img-para2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}

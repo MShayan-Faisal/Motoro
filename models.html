@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche Models</title>
+  <link rel="stylesheet" href="CSS/models.css">
+</head>
+<body>
+  <header>
+  
+  </header>
+<div class="heading">
+   <h1> Motoro Models</h1>
+</div>
+  <div class="container">
+    
+    <aside class="sidebar">
+      <h3>Filters</h3>
+      
+      
+      <label><input type="checkbox" id="filter-used"> Used</label><br>
+      <label><input type="checkbox" id="filter-new"> New</label><br><br>
+
+      <label for="priceRange">Max Price (₹):</label><br>
+      <input type="number" id="priceRange" placeholder="e.g. 200000000">
+      <button onclick="applyFilters()" class="sidebar-btn">Apply</button>
+    </aside>
+
+    <!-- Product Grid -->
+    <main id="product-list" class="grid"></main>
+  </div>
+
+  <footer></footer>
+
+  <script src="Scripts/products.js"></script>
+
+
+  <script>
+    const listContainer = document.getElementById("product-list");
+
+    function renderProducts(items) {
+      listContainer.innerHTML = "";
+      if(items.length === 0) {
+        listContainer.innerHTML = "<p>No cars found!</p>";
+        return;
+      }
+      items.forEach(p => {
+        listContainer.innerHTML += `
+          <div class="product-card">
+            <img src="${p.image}" alt="${p.title}">
+            <h3 >${p.title}</h3>
+            <p>${p.desc}</p>
+            <p class="price">${p.price}</p>
+            <a href="product.html?id=${p.id}" class="product-btn ">View Details</a>
+          </div>
+        `;
+      });
+    }
+
+    function applyFilters() {
+      let filtered = products;
+
+      // Condition filter
+      const used = document.getElementById("filter-used").checked;
+      const isNew = document.getElementById("filter-new").checked;
+
+      if(used && !isNew) {
+        filtered = filtered.filter(p => p.condition === "Used");
+      } else if(isNew && !used) {
+        filtered = filtered.filter(p => p.condition === "New");
+      }
+
+      // Price filter
+      const maxPrice = parseInt(document.getElementById("priceRange").value);
+      if(!isNaN(maxPrice)) {
+        filtered = filtered.filter(p => {
+          // Remove ₹ , commas
+          const numericPrice = parseInt(p.price.replace(/[₹,]/g, ""));
+          return numericPrice <= maxPrice;
+        });
+      }
+
+      renderProducts(filtered);
+    }
+
+    // Load all products by default
+    renderProducts(products);
+  </script>
+
+  <!-- Optional extra JS file -->
+  <script src="Scripts/script.js"></script>
+</body>
+</html>

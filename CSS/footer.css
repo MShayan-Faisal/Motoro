@@ -1,0 +1,36 @@
+
+.footer-heading{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: white;
+  padding-left: 70px;
+  display: none;
+}
+.footer-link {
+  text-decoration: none;
+  color: #f8f7f7;
+  transition: color 0.3s ease;
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: monospace;
+}
+.footer-link:hover {
+  color: #e01616;
+  text-shadow: 0px 0px 3px rgba(215, 209, 219, 0.6);
+  transition: color 0.3s;
+
+}
+.footer-ceo{
+font-weight: lighter;
+font-size: 20px;
+color: #d4af37;
+}
+
+.footer-ceo:hover {
+  color: #f5f3ee;
+  text-shadow: 0 0 8px rgba(240, 232, 232, 0.6);
+  transition: color 0.3s;
+  cursor: no-drop;
+
+}

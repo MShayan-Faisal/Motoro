@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+
+.art-section {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.img-header {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Section that holds stars */
+.star-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;               /* Make it fill the viewport */
+  overflow: hidden;
+  background: radial-gradient(circle at 40% 20%, #05060a 0%, #000 50%);
+}
+
+/* Star element */
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: transform .22s ease, box-shadow .22s ease, opacity .22s ease;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%,100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.star-heading{
+    text-align: center;
+    color: white;
+    font-size: 6.7rem;
+    padding-top: 300px;
+    font-family: 'Times New Roman', Times, serif;
+}
