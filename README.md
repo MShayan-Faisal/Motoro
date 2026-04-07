@@ -35,16 +35,4 @@ It includes advanced filtering, search functionality, and detailed pages for eac
 
 ## 🚀 Getting Started
 
-### Prerequisites
-Make sure you have installed:
-- Node.js and npm (or the required runtime)
-- Git
-- A database (MongoDB, MySQL, or similar)
-
 git clone https://github.com/your-username/motor-car-site.git
-
-# Navigate into the project directory
-cd motor-car-site
-
-# Install dependencies
-npm install
