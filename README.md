@@ -12,6 +12,8 @@ Users can browse, filter, and view detailed listings of cars with an intuitive i
 It includes advanced filtering, search functionality, and detailed pages for each vehicle.
 
 ---
+![logo](https://github.com/user-attachments/assets/fe3be246-eaaf-4fba-b4fe-f061b0f728b4)
+
 
 ## ✨ Features
 - 🚘 Browse all available cars  
@@ -31,7 +33,7 @@ It includes advanced filtering, search functionality, and detailed pages for eac
 **Optional Tools:** Cloudinary (for image hosting), JWT Auth, REST API  
 
 ---
-![logo](https://github.com/user-attachments/assets/fe3be246-eaaf-4fba-b4fe-f061b0f728b4)
+
 
 ## 🚀 Getting Started
 
