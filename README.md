@@ -31,6 +31,7 @@ It includes advanced filtering, search functionality, and detailed pages for eac
 **Optional Tools:** Cloudinary (for image hosting), JWT Auth, REST API  
 
 ---
+![logo](https://github.com/user-attachments/assets/fe3be246-eaaf-4fba-b4fe-f061b0f728b4)
 
 ## 🚀 Getting Started
 
@@ -40,9 +41,6 @@ Make sure you have installed:
 - Git
 - A database (MongoDB, MySQL, or similar)
 
-### Installation
-```bash
-# Clone the repository
 git clone https://github.com/your-username/motor-car-site.git
 
 # Navigate into the project directory
