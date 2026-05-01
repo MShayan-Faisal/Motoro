@@ -32,9 +32,4 @@ It includes advanced filtering, search functionality, and detailed pages for eac
 **Version Control:** Git & GitHub  
 **Optional Tools:** Cloudinary (for image hosting), JWT Auth, REST API  
 
----
 
-
-## 🚀 Getting Started
-
-git clone https://github.com/your-username/motor-car-site.git
