@@ -27,8 +27,7 @@ It includes advanced filtering, search functionality, and detailed pages for eac
 
 ## 🛠 Tech Stack
 **Front-end:** HTML5, CSS3 / SCSS, JavaScript (or React / Vue)  
-**Back-end:** Node.js + Express (or Python Django / PHP Laravel)  
-**Database:** MongoDB / MySQL / PostgreSQL  
+**Database:** MongoDB 
 **Version Control:** Git & GitHub  
 **Optional Tools:** Cloudinary (for image hosting), JWT Auth, REST API  
 
